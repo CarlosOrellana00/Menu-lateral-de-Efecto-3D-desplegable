@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Open Sans", sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-size: 18px;
+  transform: perspective(1000px) scale(1) rotate(0deg) translateX(0px);
+  transition: all 500ms ease-in-out;
+}
+
+.nav{
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.nav .links a{
+  display: block;
+  font-size: 22px;
+  margin: 5px 10px;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.nav .links a:hover{
+  background: #555;
+}
+
+.nav-toggle-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  background: #111;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.nav-toggle-btn span{
+  width: 50%;
+  height: 4px;
+  background: #f5f5f5;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.nav-toggle-btn span:nth-child(1){
+  top:30%;
+}
+
+.nav-toggle-btn span:nth-child(2){
+  top:50%;
+}
+
+.nav-toggle-btn span:nth-child(3){
+  top:70%;
+}
