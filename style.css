@@ -78,3 +78,28 @@ body {
 .nav-toggle-btn span:nth-child(3){
   top:70%;
 }
+
+body.activeNav {
+  overflow:hidden;
+}
+
+body.activeNav .content {
+  transform:perspective(1000px)
+    scale(0.65)
+    rotateY(25deg)
+    translateX(-50px);
+}
+
+body.activeNav .nav-toggle-btn span:nth-child(1) {
+  transform:translate(-50%,-50%) rotate(45deg);
+  top:50%;
+}
+
+body.activeNav .nav-toggle-btn span:nth-child(3) {
+  transform:translate(-50%,-50%) rotate(-45deg);
+  top:50%;
+}
+
+body.activeNav .nav-toggle-btn span:nth-child(2) {
+  display:none;
+}
